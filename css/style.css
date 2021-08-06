@@ -264,7 +264,7 @@ a.invest-btn-active {
 }
 /*======= income /=======*/
 
-/*======= "protection =======*/
+/*======= protection =======*/
 .protection {
     background: #D2EEFF;
     padding: 87px 0 61px;
@@ -288,15 +288,301 @@ a.invest-btn-active {
 .protection .repid-h2 {
     padding: 55px 23px 0 0;
 }
-/*======= "protection /=======*/
+/*======= protection / =======*/
+
+/*======= user =======*/
+.user {
+    font-family: 'Montserrat';
+    position: relative;
+}
+.user-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 0 55px;
+    padding-top: 53px;
+
+}
+/* .user-wrapper__item {
+    position: relative;
+} */
+.user-right-wrap {
+    width: 525px;
+    border: 1px solid #DCDCDC;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.13);
+    margin-top: 20px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+/* .user-right-wrap::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 35px;
+    left: -50px;
+    width: 1px;
+    height: 1px;
+    border-top: 31px solid transparent ;
+    border-right: 50px solid transparent;
+    border-bottom: 31px solid transparent;
+    filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.13));
+    -webkit-filter: drop-shadow(0px 5px 20px rgba(0, 0, 0, 0.13));
+    z-index: 1;
+}     */
+.user-right-t {
+    padding: 24px 47px 0;
+}
+.user-right-wrap h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+.user-righ-block {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DFDFDF;
+}
+.user-righ-block:last-child {
+    border: none;
+}
+.user-righ-block img {
+    margin: 25px 35px 25px 0;
+}
+.user-righ-block h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #424548;   
+}
+.user-righ-block h3 span {
+    display: block;
+    font-weight: 700;
+}
+.user-righ-block-bottom {
+    background: #FB6C6C;
+    padding: 9px 0 8px;
+    border-radius: 0px 0px 12px 12px;
+    -webkit-border-radius: 0px 0px 12px 12px;
+    -moz-border-radius: 0px 0px 12px 12px;
+    -ms-border-radius: 0px 0px 12px 12px;
+    -o-border-radius: 0px 0px 12px 12px;
+}
+.user-righ-block-bottom h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.user-yellow-block {
+    background: #FFD300;
+    padding: 28px 0;
+}
+.user-yellow-block p {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    padding: 0 140px 13px;
+}
+.user-yellow-block h5 {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.user-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 31px solid transparent;
+    border-right: 31px solid transparent;
+    border-top: 31px solid #FFD300;
+    margin: 0 auto;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+/*======= user /=======*/
+
+/*======= calculator =======*/
+
+.calculator {
+    background: #F3F3F3;
+    text-align: center;
+}
+.calculator .hr-left {
+    text-align: center;
+    margin: 30px auto 20px;
+}
+.calculator-block-top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.calculator-top-wrapper {
+    margin: 0 10px;
+    position: relative;
+}
+.calculator-top-wrapper-1::before {
+    content: 'Платеж по аренде в месяц ($)';
+    position: absolute;
+    top: 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    color: #5B5B5B;
+    padding-left: 20px;
+}
+.calculator-top-wrapper-2::before {
+    content: 'Сумма покупки ($)';
+    position: absolute;
+    top: 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    color: #5B5B5B;
+    padding-left: 20px;
+}
+.calculator-top-wrapper input {
+    width: 305px;
+    height: 57px;
+    background: #FFFFFF;
+    border: 1px solid #CDCECE;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+
+.calculator-btn {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #000000;
+    background: #FFD200;
+    padding: 10px 39px;
+    margin: 37px 0 58px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+/* ==== */
+.calculator-block-bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.calculator-bottom-wrapper {
+    margin: 19px 17px;
+    position: relative;
+}
+.calculator-bottom-wrapper input {
+    width: 186px;
+    height: 57px;
+    padding: 20px;
+    background: #F1F1F1;
+    border: 1px solid #CDCECE;
+    box-sizing: border-box;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.calculator-bottom-wrapper-1::before {
+    content: 'Ежемесячный платеж ($)';
+    position: absolute;
+    top: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    color: #5B5B5B;
+    padding-left: 20px;
+}
+.calculator-bottom-wrapper-2::before {
+    content: 'Срок (мес.)';
+    position: absolute;
+    top: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    color: #5B5B5B;
+    padding-left: 20px;
+}
+.calculator-bottom-wrapper-3::before {
+    content: 'Аванс ($)';
+    position: absolute;
+    top: 8px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    color: #5B5B5B;
+    padding-left: 20px;
+}
+.calculator-end-text {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #FF9900;
+    padding-bottom: 85px;
+    margin-top: 19px;    
+}
+/*======= calculator /=======*/
 
 /* ================ Медиа ================ */
 /* ================ Медиа ================ */
 /* ================ Медиа ================ */
 
 
-/* ====== Медиа1300px ====== */
+/* ====== Медиа 1400px ====== */
     
+@media(max-width: 1400px) {
+    .user-yellow-block p {
+        padding: 0 105px 13px;
+    }
+}
+/* ====== Медиа 1400px /====== */
+
 @media(max-width: 1300px) {
     .invest-block {
         display: flex;
@@ -305,6 +591,9 @@ a.invest-btn-active {
     }
     .rent-owner h2 {
         padding: 35px 120px 31px;
+    }
+    .user-yellow-block p {
+        padding: 0 15px 13px;
     }
 }
 /* ====== Медиа 1300px /====== */
@@ -336,6 +625,9 @@ a.invest-btn-active {
     .protection-block__item img {
         margin: 30px 0 0;
     }
+    .user-yellow-block p {
+        padding: 0 0px 13px;
+    }
 }
 /* ====== Медиа 1170px /====== */
 
@@ -344,6 +636,14 @@ a.invest-btn-active {
     .rules {
         background: url(../img/rules/rules-bg.svg) 54% 0 / cover no-repeat;
     }
+    .user-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-right-wrap {
+        margin: 0px 0 60px;
+    }
+
 }
 /* ====== Медиа 992px /====== */
 
@@ -365,6 +665,26 @@ a.invest-btn-active {
     }
     .income {
         padding: 0 0 100px;
+    }
+    .user-yellow-block p {
+        font-size: 21px;
+        line-height: 29px;
+    }
+    .user-arrow {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #FFD300;
+        bottom: -18px;
+    }
+    .calculator-block-top {
+        flex-direction: column;
+        margin-top: 35px;
+    }
+    .calculator-top-wrapper {
+        margin: 10px 0;
+    }
+    .calculator-bottom-wrapper {
+        margin: 10px;
     }
 }
 /* ====== Медиа 768px /====== */
@@ -423,6 +743,14 @@ a.invest-btn-active {
         font-size: 28px;
         line-height: 37px;
     }
+    .user-yellow-block p {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .user-yellow-block h5 {
+        font-size: 24px;
+        line-height: 34px;
+    }    
 }
 /* ====== Медиа 650px /====== */
 
@@ -432,6 +760,22 @@ a.invest-btn-active {
     .income-block .repid-p {
         color: #FFFFFF;
         padding-right: 0;
+    }
+    .user-right-wrap {
+        width: 100%;
+    }
+    .user-right-t {
+        padding: 15px 15px 0;
+    }
+    .user-righ-block img {
+        margin: 25px 25px 25px 0;
+    }
+    .user-right-wrap h2 {
+        text-align: center;
+    }
+    .user-yellow-block h5 {
+        font-size: 21px;
+        line-height: 27px;
     }
 }
 /* ====== Медиа 550px /====== */
@@ -488,6 +832,32 @@ a.invest-btn-active {
     .protection .repid-h2 {
         font-size: 25px;
     }
+    .user-righ-block {
+        flex-direction: column;
+        padding: 18px 0;
+    }
+    .user-right-wrap h2 {
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 6px;
+    }
+    .user-righ-block {
+        border: none;
+    }
+    .user-righ-block img {
+        margin: 0 0 10px;
+    }
+    .user-righ-block h3 {
+        text-align: center;
+    }
+    .calculator-bottom-wrapper {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .calculator-bottom-wrapper input {
+        width: 305px;
+    }
+
 }
 /* ====== Медиа 450px /====== */
 
@@ -538,6 +908,27 @@ a.invest-btn-active {
         font-size: 22px;
         line-height: 32px;
     }
+    .calculator .hr-left {
+        margin: 25px auto 20px;
+    }
+    .calculator-block-top {
+        margin-top: 25px;
+    }
+    .calculator-top-wrapper {
+        margin: 5px 0;
+    }
+    .calculator-btn {
+        margin: 25px 0 35px;
+    }
+    .calculator-block-bottom {
+        margin-top: 35px;
+    }
+    .calculator-bottom-wrapper {
+        margin: 5px 0;
+    }
+    .calculator-end-text {
+        padding-bottom: 60px;
+    }
 }
 /* ====== Медиа 400px /====== */
 
@@ -554,5 +945,18 @@ a.invest-btn-active {
         font-size: 19px;
         line-height: 30px;
     }
+    .user-right-wrap h2 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .user-right-t {
+        padding: 14px 10px 0;
+    }
+    .calculator-top-wrapper input {
+        width: 100%;
+    }
+    
+    .calculator-bottom-wrapper input {
+        width: 100%;
+    }
 }
-/* ====== Медиа 360px /====== */
