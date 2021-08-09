@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PF Din Display Pro';
+    src: local('PF Din Display Pro Light'), local('PF-Din-Display-Pro-Light'),
+        url('PFDinDisplayPro-Light.woff2') format('woff2'),
+        url('PFDinDisplayPro-Light.woff') format('woff'),
+        url('PFDinDisplayPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
