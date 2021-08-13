@@ -1212,6 +1212,9 @@ input[type="number"]::-webkit-inner-spin-button {
     .calculator-top-wrapper {
         margin: 5px 0;
     }
+    .calculator-top-wrapper input {
+        width: 85%;
+    }
     .calculator-btn {
         margin: 25px 0 35px;
     }
@@ -1312,9 +1315,9 @@ input[type="number"]::-webkit-inner-spin-button {
     .location-block-1 {
         margin-right: 18px;
     }
-    .calculator-top-wrapper input {
+    /* .calculator-top-wrapper input {
         width: 100%;
-    }
+    } */
     
     .calculator-bottom-wrapper input {
         width: 100%;
