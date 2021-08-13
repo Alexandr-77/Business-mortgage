@@ -1,12 +1,4 @@
-*{
-  margin: 0; 
-  padding: 0;
-  box-sizing: border-box; 
-}
-/* :root {
-    --hr-w: #ffffff; 
-    --hr-e: #FFD300; 
-} */
+
 @font-face {
     font-family: 'PF Din Display Pro';
     src: local('PF Din Display Pro Light'), local('PF-Din-Display-Pro-Light'),
@@ -16,34 +8,36 @@
     font-weight: 300;
     font-style: normal;
   }
-body {
+  body {
+      margin: 0;
+  }
+.wrapper-tes {
     font-family: 'Montserrat', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
 }
-
-
-h1, h2, h3, h4, h5, h6 p {
+.wrapper-tes h1, h2, h3, h4, h5, h6 p{
     margin: 0;
 }
-ul, li {
+.wrapper-tes ul, li {
     padding: 0;
-	 list-style: none;
+    list-style: none;
 }
 
-img {
+.wrapper-tes img {
   max-width: 100%;
   display: block;
 }
 
-a {
+.wrapper-tes a {
     text-decoration: none;
 }
 
-
-.container {
+.container-m {
     max-width: 1400px;
     padding: 0 15px;
     margin: 0 auto;
-    /* border: 1px solid #FFD300; */
 }
 
 /* =========================================== */
@@ -51,7 +45,7 @@ a {
 /* ======= invest ======= */
 .invest {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(180deg, #4E5877 0%, #4C5572 50.03%, #3D465F 100%);
+    background: linear-gradient(180deg, #6D0FDE 0%, #AD45F9 100%);
 }
 .invest-block {
     display: flex;
@@ -121,7 +115,7 @@ a.invest-btn-active {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 90px;
+    padding-top: 109px;
 }
 .rent__item-image {
     margin: 25px 95px 0 0;
@@ -137,7 +131,7 @@ a.invest-btn-active {
     box-sizing: border-box;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.13);
     border-radius: 13px;
-    margin-bottom: 16px;
+    margin-bottom: 31px;
 }
 
 .rent__items img {
@@ -236,41 +230,28 @@ a.invest-btn-active {
 
 /*======= location =======*/
 .location {
-    background: url(../img/location/location-bg.svg) 50% 0 / cover no-repeat;
-    padding: 0 0 135px;
+    background: #FEFF61;
+    padding: 0 0 60px;
 }
-.container-location {
+.container-m-location {
     display: flex;
     justify-content: flex-end;
 }
 .location-block  {
     max-width: 625px;
+    margin: 0 auto;
 }
-
+.location-block-1 {
+    padding: 89px 0 0;
+    margin-right: 35px;
+}
 .location-block .hr-left {
-    background: #FFFFFF;
+    background: #FFD300;
 }
 .location-block .repid-p {
     padding-right: 50px;
 } 
 /*======= location /=======*/
-
-/*======= income /=======*/
-.income {
-    background: url(../img/income/income-bg-2.svg) 50% 0 / cover no-repeat;
-    padding: 0 0 135px;
-}
-.income-block {
-    max-width: 605px;
-}
-.income-block .repid-h2 {
-    color: #FFFFFF;
-}
-.income-block .repid-p {
-    color: #FFFFFF;
-    padding-right: 70px;
-}
-/*======= income /=======*/
 
 /*======= protection =======*/
 .protection {
@@ -297,6 +278,29 @@ a.invest-btn-active {
     padding: 55px 23px 0 0;
 }
 /*======= protection / =======*/
+
+/*======= income /=======*/
+.income {
+    background: url(../img/income/income-bg-nev.svg) 50% 0 / cover no-repeat;
+    padding: 0 0 135px;
+}
+.income .container-m {
+    display: flex;
+    justify-content: flex-end;
+}
+.income-block {
+
+    max-width: 605px;
+
+}
+.income-block .repid-h2 {
+    color: #FFFFFF;
+}
+.income-block .repid-p {
+    color: #FFFFFF;
+    padding-right: 70px;
+}
+/*======= income /=======*/
 
 /*======= user =======*/
 .user {
@@ -610,6 +614,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .conditions h2 {
     text-align: center;
     padding-top: 98px;
+    color: #FFFFFF;
 }
 .conditions hr {
     margin: 30px auto 0px;
@@ -670,7 +675,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-family: 'PF Din Display Pro';
     width: 366px;
     height: 83px;
-    border: 1px solid #787878;
+    border: 1px solid #CACACA;
     box-sizing: border-box;
     text-align: center;
     font-weight: 300;
@@ -706,6 +711,7 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #000000;
     padding: 16px 36px 14px;
     margin-bottom: 125px;
+    cursor: pointer;
 }
 /*======= request /=======*/
 
@@ -744,9 +750,26 @@ input[type="number"]::-webkit-inner-spin-button {
         display: flex;
         flex-direction: column-reverse;
     }
+    .invest__item-image img {
+        margin: 0 auto;
+    }
+    .income {
+        background: url(../img/income/income-bg-nev.svg) 75% 0 / cover no-repeat;
+        padding: 0 0 135px;
+    }
+    .invest__item-text {
+        text-align: center;
+    }
+    .invest-grup {
+        justify-content: center;
+    }
     .rent-block {
         flex-direction: column;
         align-items: center;
+        padding: 30px 0 70px;
+    }
+    .rent__items {
+        margin-bottom: 16px;
     }
     .rent-owner h2 {
         padding: 35px 0px 31px;
@@ -754,7 +777,7 @@ input[type="number"]::-webkit-inner-spin-button {
         line-height: 38px;
     }
     .protection-block {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .protection {
         padding: 0px 0 61px;
@@ -786,6 +809,17 @@ input[type="number"]::-webkit-inner-spin-button {
     .user-right-wrap::before {
         display: none;
     }
+    .container-m-location {
+        display: block;
+    }
+    .location-block-1 {
+        padding: 70px 0 0;
+        margin: 0 auto;
+        max-width: 35%;
+    }
+    .location-block-2 .repid-h2 {
+        padding: 35px 0 0;
+    }
 
 }
 /* ====== Медиа 992px /====== */
@@ -798,12 +832,13 @@ input[type="number"]::-webkit-inner-spin-button {
         line-height: 38px;
     }
     .rules {
-        background: #B8DFFB;
-        min-height: auto;
-        padding-bottom: 100px;
+        background: url(../img/rules/rules-bg.svg) 63% 0 / cover no-repeat;
+    }
+    .rules-block {
+        max-width: 350px;
     }
     .location {
-        background: #FFED26;
+        background: #FEFF5C;
         padding: 0 0 100px;
     }
     .income {
@@ -842,21 +877,24 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ====== Медиа 650px ====== */
 @media (max-width: 650px) {
     .invest-block {
-        padding: 193px 0px 35px;
+        padding: 193px 0px 44px;
     }
     .invest__item-text h1 {
         margin: 15px 0 0px;
         font-size: 8vw;
         line-height: 150%;
+        text-align: center;
     }
     .invest__item-text h2 {
         margin-bottom: 30px;
         font-size: 5vw;
         line-height: 7vw;
+        text-align: center;
     }
     .invest-grup {
         flex-direction: column;
         gap: 20px 0;
+        align-items: center;
     }
     .rent__items {
         width: 100%;
@@ -927,11 +965,12 @@ input[type="number"]::-webkit-inner-spin-button {
         text-align: center;
     }
     .user-yellow-block h5 {
-        font-size: 21px;
+        font-size: 20px;
         line-height: 27px;
     }
     .conditions-block__item {
         padding: 0 20px;
+        min-height: 120px;
     }
     .conditions-block__item img {
         margin: 0 20px 0 0px;
@@ -958,15 +997,15 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ====== Медиа 450px ====== */
 @media (max-width: 450px) {
     .invest__item-text h2 {
-        margin-bottom: 22px;
+        margin-bottom: 30px;
     }
     .invest-grup {
         gap: 15px 0;
     }
     .invest__item-text a {
-        font-size: 14px;
-        line-height: 17px;
-        width: 200px;
+        font-size: 15px;
+        line-height: 18px;
+        width: 240px;
         height: 45px;
     }
     .rent__items h2 {
@@ -985,16 +1024,16 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .hr-left {
         width: 114px;
-        margin: 15px 0 12px;
+        margin: 10px 0 12px;
         height: 7px;
     }
     .rules {
-        min-height: 300px;
+        min-height: 350px;
     }
     .repid-h2 {
         font-size: 28px;
         line-height: 35px;
-     }
+    }
      .repid-p {
         font-size: 15px;
         line-height: 24px;
@@ -1006,28 +1045,20 @@ input[type="number"]::-webkit-inner-spin-button {
     .protection .repid-h2 {
         font-size: 25px;
     }
-    .user-righ-block {
-        flex-direction: column;
-        padding: 18px 0;
-    }
     .user-right-wrap h2 {
         font-size: 18px;
         line-height: 23px;
         margin-bottom: 6px;
     }
-    .user-righ-block {
-        border: none;
-    }
     .user-righ-block img {
-        margin: 0 0 10px;
-    }
-    .user-righ-block h3 {
-        text-align: center;
+        margin: 25px 17px 25px 0;
+        width: 42px;
     }
     .calculator-bottom-wrapper {
         margin: 10px 0;
         width: 100%;
     }
+
     .calculator-bottom-wrapper input {
         width: 305px;
     }
@@ -1036,33 +1067,58 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: 40px auto 0px;
     }
     .conditions-block__item {
-        padding: 15px 15px;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        min-height: 140px;
-    }
-    .conditions-block__item img {
-        margin: 0 0 8px;
+        border-radius: 9px;
     }
     .request h2 {
         font-size: 27px;
         line-height: 27px;
+    }
+    .conditions-block {
+        gap: 20px 44px;
     }
 }
 /* ====== Медиа 450px /====== */
 
 /* ====== Медиа 400px ====== */
 @media (max-width: 400px) {
+    .invest__item-image {
+        padding-left: 5%;
+    }
+    .invest__item-text a {
+        width: 226px;
+    }
+    .rules {
+        min-height: 210px;
+        padding-bottom: 30px;
+    }
+    .rules-block {
+        max-width: 248px;
+    }
+    .rules-block .repid-h2 {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 48px;
+    }
+    .rules-block .hr-left {
+        margin: 10px 0;
+    }
+    .repid-p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .rent__item-image img {
+        padding: 0 7%;
+    }
     .rent__items img {
-        margin: 0px 10px 0 0px;
+        margin: 0px 18px 0 8px;
+        width: 36px;
     }
     .rent__items h2 {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 17px;
     }
     .rent__items {
-        min-height: 75px;
+        min-height: 76px;
     }
     .rent__items-last h3 {
         font-size: 12px;
@@ -1070,34 +1126,82 @@ input[type="number"]::-webkit-inner-spin-button {
         line-height: 20px;
     }
     .rent-block {
-        padding-top: 10px;
-    }
-    .rules {
-        padding-bottom: 65px;
+        padding: 20px 0 20px;
     }
     .repid-h2 {
-        padding-top: 70px;
+        padding-top: 50px;
         font-size: 25px;
         line-height: 33px;
     }
     .hr-left {
-        height: 5px;
+        height: 4px;
     }
     .location {
-        padding: 0 0 65px;
+        padding: 0 0 20px;
     }
     .income {
-        padding: 0 0 65px;
+        background: url(../img/income/income-bg-nev-mobil.svg) 50% 0 / cover no-repeat;
+        height: 390px;
+        padding: 0;
     }
+
     .income-block .repid-h2 {
-        font-size: 22px;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 35px;
     }
     .protection .repid-h2 {
-        padding: 70px 0px 0 0;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 43px 0px 0 0;
     }
-    .protection .repid-h2 {
-        font-size: 22px;
-        line-height: 32px;
+    .protection {
+        background: url(../img/protection/protection-nev-mobil.svg) 100% 0 / cover no-repeat;
+        height: 435px;
+    }
+    .protection__item-text .repid-p{
+        max-width: 208px;
+    }
+    .protection__item-hid {
+        display: none;
+    }
+    .location-block-1 {
+        float: left;
+        margin-right: 35px;
+        max-width: 100px;
+    }
+    .location-block-2 .repid-h2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .user-left-image {
+        padding: 0 30px;
+    }
+    .user-righ-block h3 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .user-righ-block img {
+        margin: 20px 17px 20px 0;
+    }
+    .user-righ-block-bottom h4 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .user-yellow-block p {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .user-right-wrap h2 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .user-yellow-block h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .user-yellow-block {
+        padding: 16px 0;
     }
     .calculator .hr-left {
         margin: 25px auto 20px;
@@ -1121,35 +1225,59 @@ input[type="number"]::-webkit-inner-spin-button {
         padding-bottom: 60px;
     }
     .conditions h2 {
-        padding-top: 70px;
+        padding-top: 50px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .conditions hr {
+        margin: 24px auto 0px;
+    }
+    .conditions-block {
+        gap: 10px 0px;
+        padding-bottom: 50px;
+        margin: 24px auto 0px;
     }
     .conditions-block__item h3 {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 14px;
+        line-height: 17px;
     }
     .conditions-block__item h3 span {
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .conditions-block__item {
+        min-height: 93px;
+    }
+    .conditions-block__item img {
+        margin: 0 25px 0 9px;
     }
     .request-wrapper {
-        gap: 12px;
+        gap: 19px;
     }
     .request h2 {
         font-size: 24px;
         line-height: 24px;
     }
+    .request .hr-left {
+        margin: 24px auto 0;
+    }
+    .request-wrapper {
+        margin: 36px 0 24px;
+    }
     .request-wrapper input {
-        height: 65px;
+        width: 293;
+        height: 60px;
         font-size: 18px;
         line-height: 22px;
+
     }
     .request-btn {
-        width: 225px;
-        height: 50px;
-        font-size: 16px;
+        width: 273px;
+        height: 54px;
+        font-size: 15px;
         line-height: 18px;
         padding: 16px 15px 14px;
-        margin-bottom: 70px;
+        margin-bottom: 55px;
     }
 }
 /* ====== Медиа 400px /====== */
@@ -1160,19 +1288,29 @@ input[type="number"]::-webkit-inner-spin-button {
         font-size: 23px;
         line-height: 31px;
     }
-    .income-block .repid-h2 {
-        font-size: 20px;
+    .rent__items img {
+        margin: 0px 13px 0 3px;
     }
-    .protection .repid-h2 {
-        font-size: 19px;
-        line-height: 30px;
-    }
-    .user-right-wrap h2 {
-        font-size: 17px;
-        line-height: 22px;
+    .user-righ-block img {
+        margin: 20px 11px 20px 0;
     }
     .user-right-t {
         padding: 14px 10px 0;
+    }
+    .user-righ-block h3 {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .user-righ-block img {
+        width: 38px;
+    }
+    .user-yellow-block h5 {
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .location-block-1 {
+        margin-right: 18px;
     }
     .calculator-top-wrapper input {
         width: 100%;
